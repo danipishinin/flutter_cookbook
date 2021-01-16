@@ -4,14 +4,17 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class BotaoGradiente extends StatelessWidget {
   String txtBtn;
-  BotaoGradiente(this.txtBtn);
+  String rota;
+  BotaoGradiente(this.txtBtn, this.rota);
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(8),
       height: 60.0,
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, rota);
+        },
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
@@ -20,8 +23,8 @@ class BotaoGradiente extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                ColorsPalette().orangeDegrade[800],
-                ColorsPalette().orangeDegrade[700]
+                ColorsPalette().orangeDegrade[300],
+                ColorsPalette().orangeDegrade[400]
               ],
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,

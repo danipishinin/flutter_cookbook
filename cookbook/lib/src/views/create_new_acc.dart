@@ -24,7 +24,7 @@ class _NewAccountState extends State<NewAccount> {
               InputForm('Email', Icons.alternate_email),
               InputForm('Nova senha', Icons.lock),
               InputForm('Repitir Nova senha', Icons.lock),
-              BotaoGradiente('Registrar-se'),
+              BotaoGradiente('Registrar-se', '/login/cadastro'),
               FlatButton(
                 child: Text(
                   'Já tenho uma conta!',

@@ -1,6 +1,7 @@
 import 'package:cookbook/src/views/colors/colors_palette.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Logo extends StatelessWidget {
   double logoTamanho;
   double tituloTamanho;
