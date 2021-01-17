@@ -1,7 +1,9 @@
-import 'package:cookbook/src/views/colors/colors_palette.dart';
 import 'package:cookbook/src/views/create_new_acc.dart';
+import 'package:cookbook/src/views/favorite.dart';
 import 'package:cookbook/src/views/home.dart';
 import 'package:cookbook/src/views/login.dart';
+import 'package:cookbook/src/views/settings.dart';
+import 'package:cookbook/src/views/supermarket.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,13 +18,15 @@ class Cookbook extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Color(0XFFFF8C00),
-        backgroundColor: ColorsPalette().orangeDegrade[100],
       ),
       home: Login(),
       routes: <String, WidgetBuilder>{
         '/login': (BuildContext context) => Login(),
-        '/login/cadastro': (BuildContext context) => NewAccount(),
-        '/login/home': (BuildContext context) => Home()
+        '/cadastro': (BuildContext context) => NewAccount(),
+        '/home': (BuildContext context) => Home(),
+        '/favorite': (BuildContext context) => Favorite(),
+        '/supermarket': (BuildContext context) => Supermarket(),
+        '/settings': (BuildContext context) => Settings()
       },
     );
   }

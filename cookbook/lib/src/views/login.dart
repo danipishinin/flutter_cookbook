@@ -22,14 +22,14 @@ class _LoginState extends State<Login> {
             Logo(120.0, 24.0),
             InputForm('Email', Icons.alternate_email),
             InputForm('Senha', Icons.lock),
-            BotaoGradiente('Entrar', '/login/home'),
+            BotaoGradiente('Entrar', '/home'),
             FlatButton(
               child: Text(
                 'Criar uma nova conta!',
                 style: TextStyle(color: ColorsPalette().grayDegrade),
               ),
               onPressed: () {
-                Navigator.pushNamed(context, '/login/cadastro');
+                Navigator.pushNamed(context, '/cadastro');
               },
             ),
           ],

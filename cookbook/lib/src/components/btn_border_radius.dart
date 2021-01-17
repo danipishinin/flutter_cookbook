@@ -13,7 +13,7 @@ class BotaoGradiente extends StatelessWidget {
       height: 60.0,
       child: RaisedButton(
         onPressed: () {
-          Navigator.pushNamed(context, rota);
+          Navigator.pushNamed(context, this.rota);
         },
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),

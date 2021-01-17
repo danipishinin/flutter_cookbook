@@ -2,12 +2,12 @@ import 'package:cookbook/src/components/btn_FAB_menu.dart';
 import 'package:cookbook/src/components/menu_bottom.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
+class Settings extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _SettingsState createState() => _SettingsState();
 }
 
-class _HomeState extends State<Home> {
+class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
         scrollDirection: Axis.vertical,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text("home :)")],
+          children: [Text(" :)")],
         ),
       ),
     );
