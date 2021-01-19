@@ -1,5 +1,3 @@
-import 'package:cookbook/src/components/btn_FAB_menu.dart';
-import 'package:cookbook/src/components/menu_bottom.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatefulWidget {
@@ -11,9 +9,7 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: MenuBottom(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FabButton(),
+      backgroundColor: Colors.blue,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(

@@ -1,3 +1,4 @@
+import 'package:cookbook/src/components/menu_bottom.dart';
 import 'package:cookbook/src/views/colors/colors_palette.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,8 @@ class BotaoGradiente extends StatelessWidget {
       height: 60.0,
       child: RaisedButton(
         onPressed: () {
-          Navigator.pushNamed(context, this.rota);
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => MenuBottom()));
         },
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
