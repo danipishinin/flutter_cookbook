@@ -1,8 +1,8 @@
 import 'package:cookbook/src/views/colors/colors_palette.dart';
 import 'package:cookbook/src/views/favorite.dart';
 import 'package:cookbook/src/views/home.dart';
+import 'package:cookbook/src/views/minhasReceitas.dart';
 import 'package:cookbook/src/views/settings.dart';
-import 'package:cookbook/src/views/supermarket.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +23,7 @@ class _MenuBottomState extends State<MenuBottom> {
       case 1:
         return Favorite();
       case 2:
-        return Supermarket();
+        return MinhasReceitas();
       case 3:
         return Settings();
         break;
@@ -76,7 +76,7 @@ class _MenuBottomState extends State<MenuBottom> {
                 iconSize: 30.0,
                 padding: EdgeInsets.only(left: 28.0),
                 icon: Icon(
-                  Icons.shopping_cart,
+                  Icons.menu_book,
                   color: ColorsPalette().yellowDegrade[300],
                 ),
                 onPressed: () {
