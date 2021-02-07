@@ -97,7 +97,7 @@ class _MenuBottomState extends State<MenuBottom> {
                     _currentIndex = 3;
                   });
                 },
-              )
+              ),
             ],
           ),
         ),

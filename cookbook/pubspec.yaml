@@ -53,12 +53,13 @@ flutter:
 
     - assets/images/cookbook.png
     - assets/images/avatar-gatinho.jpg
+    - assets/images/girlWithWatermellow.jpg
 
     - assets/icons/cookbook.svg
-    - assets/icons/cocktail.svg
-    - assets/icons/dessert.svg
-    - assets/icons/hamburger.svg
-    - assets/icons/tray.svg
+    - assets/icons/food-tray.svg
+    - assets/icons/clock.svg
+    - assets/icons/groceries.svg
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

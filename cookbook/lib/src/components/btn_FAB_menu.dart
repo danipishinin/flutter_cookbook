@@ -10,7 +10,9 @@ class FabButton extends StatelessWidget {
       child: FittedBox(
         child: FloatingActionButton(
           backgroundColor: ColorsPalette().orangeDegrade[400],
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/nova_receita');
+          },
           child: Icon(
             Icons.add,
             color: Colors.white,

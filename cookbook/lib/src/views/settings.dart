@@ -1,4 +1,5 @@
 import 'package:cookbook/src/components/btn_border_radius.dart';
+import 'package:cookbook/src/components/headerWithoutSearch.dart';
 import 'package:cookbook/src/components/input.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,7 @@ class _SettingsState extends State<Settings> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            HeaderWithoutSearch("Configurações"),
             CircleAvatar(
                 radius: 50.0,
                 backgroundImage: NetworkImage(

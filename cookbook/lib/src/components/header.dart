@@ -1,26 +1,15 @@
+import 'package:cookbook/src/components/btn_sair.dart';
 import 'package:cookbook/src/views/colors/colors_palette.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
-  String subtitle;
+  final String subtitle;
   Header(this.subtitle);
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            IconButton(
-              iconSize: 30.0,
-              icon: Icon(
-                Icons.exit_to_app_rounded,
-                color: ColorsPalette().yellowDegrade[300],
-              ),
-              onPressed: () {},
-            ),
-          ],
-        ),
+        BotaoSair(),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
