@@ -11,6 +11,7 @@ class NovaReceita extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+          padding: EdgeInsets.all(16.0),
           scrollDirection: Axis.vertical,
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             BotaoSair(),
@@ -57,7 +58,14 @@ class NovaReceita extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            BotaoGradiente("Salvar Receita", "Navigator.pop")
+            BotaoGradiente("Salvar Receita", "Navigator.pop"),
+            FlatButton(
+              child: Text(
+                'Excluir Receita!',
+                style: TextStyle(color: ColorsPalette().grayDegrade),
+              ),
+              onPressed: () {},
+            ),
           ])),
     );
   }

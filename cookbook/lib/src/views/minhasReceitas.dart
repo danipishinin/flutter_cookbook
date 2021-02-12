@@ -1,3 +1,5 @@
+import 'package:cookbook/src/components/btn_sair.dart';
+import 'package:cookbook/src/components/card_minhas_receitas.dart';
 import 'package:cookbook/src/components/header.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +17,12 @@ class _MinhasReceitasState extends State<MinhasReceitas> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
+            BotaoSair(),
             Header("Minhas Receitas"),
+            SizedBox(
+              height: 10,
+            ),
+            CardMinhasReceitas()
           ],
         ),
       ),

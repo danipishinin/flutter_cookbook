@@ -1,4 +1,3 @@
-import 'package:cookbook/src/components/btn_sair.dart';
 import 'package:cookbook/src/views/colors/colors_palette.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +8,6 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        BotaoSair(),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

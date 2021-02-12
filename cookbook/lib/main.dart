@@ -1,5 +1,4 @@
 import 'package:cookbook/src/views/create_new_acc.dart';
-import 'package:cookbook/src/views/favorite.dart';
 import 'package:cookbook/src/views/home.dart';
 import 'package:cookbook/src/views/login.dart';
 import 'package:cookbook/src/views/minhasReceitas.dart';
@@ -25,7 +24,6 @@ class Cookbook extends StatelessWidget {
         '/login': (BuildContext context) => Login(),
         '/cadastro': (BuildContext context) => NewAccount(),
         '/home': (BuildContext context) => Home(),
-        '/favorite': (BuildContext context) => Favorite(),
         '/supermarket': (BuildContext context) => MinhasReceitas(),
         '/settings': (BuildContext context) => Settings(),
         '/nova_receita': (BuildContext context) => NovaReceita(),

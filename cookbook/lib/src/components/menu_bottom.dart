@@ -1,5 +1,4 @@
 import 'package:cookbook/src/views/colors/colors_palette.dart';
-import 'package:cookbook/src/views/favorite.dart';
 import 'package:cookbook/src/views/home.dart';
 import 'package:cookbook/src/views/minhasReceitas.dart';
 import 'package:cookbook/src/views/settings.dart';
@@ -15,16 +14,14 @@ class MenuBottom extends StatefulWidget {
 
 class _MenuBottomState extends State<MenuBottom> {
   int _currentIndex = 0;
-  List<String> titulo = ['home', 'favorite', 'supermarket', 'settings'];
+  List<String> titulo = ['home', 'minhasReceitas', 'settings'];
   Widget callPage(int currentIndex) {
     switch (currentIndex) {
       case 0:
         return Home();
       case 1:
-        return Favorite();
-      case 2:
         return MinhasReceitas();
-      case 3:
+      case 2:
         return Settings();
         break;
       default:
@@ -35,7 +32,7 @@ class _MenuBottomState extends State<MenuBottom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       floatingActionButton: FabButton(),
       body: callPage(_currentIndex),
       bottomNavigationBar: BottomAppBar(
@@ -44,11 +41,10 @@ class _MenuBottomState extends State<MenuBottom> {
           height: 75,
           child: Row(
             mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               IconButton(
                 iconSize: 30.0,
-                padding: EdgeInsets.only(left: 28.0),
                 icon: Icon(
                   Icons.restaurant,
                   color: ColorsPalette().yellowDegrade[300],
@@ -61,9 +57,8 @@ class _MenuBottomState extends State<MenuBottom> {
               ),
               IconButton(
                 iconSize: 30.0,
-                padding: EdgeInsets.only(right: 28.0),
                 icon: Icon(
-                  Icons.favorite,
+                  Icons.menu_book,
                   color: ColorsPalette().yellowDegrade[300],
                 ),
                 onPressed: () {
@@ -74,9 +69,8 @@ class _MenuBottomState extends State<MenuBottom> {
               ),
               IconButton(
                 iconSize: 30.0,
-                padding: EdgeInsets.only(left: 28.0),
                 icon: Icon(
-                  Icons.menu_book,
+                  Icons.settings,
                   color: ColorsPalette().yellowDegrade[300],
                 ),
                 onPressed: () {
@@ -85,19 +79,9 @@ class _MenuBottomState extends State<MenuBottom> {
                   });
                 },
               ),
-              IconButton(
-                iconSize: 30.0,
-                padding: EdgeInsets.only(right: 28.0),
-                icon: Icon(
-                  Icons.settings,
-                  color: ColorsPalette().yellowDegrade[300],
-                ),
-                onPressed: () {
-                  setState(() {
-                    _currentIndex = 3;
-                  });
-                },
-              ),
+              SizedBox(
+                width: 40,
+              )
             ],
           ),
         ),
